@@ -1,13 +1,13 @@
 import { ApiService } from '@services/ApiService';
 
 export class EventService {
-    private apiService: ApiService;
+  private apiService: ApiService;
 
-    constructor(apiService: ApiService) {
-        this.apiService = apiService;
-    }
+  constructor(apiService: ApiService) {
+    this.apiService = apiService;
+  }
 
-    async generateEvent(attributes: any, choice: string) {
-        return this.apiService.fetchEvent(attributes, choice);
-    }
+  async generateEvent(attributes: any, choice: string) {
+    return this.apiService.fetchEvent(attributes, choice);
+  }
 }

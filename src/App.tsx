@@ -6,10 +6,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/school/main" element={
-          <SchoolCoreProvider >
-            <SchoolMain />
-          </SchoolCoreProvider>
+        <Route
+          path="/school/main"
+          element={
+            <SchoolCoreProvider>
+              <SchoolMain />
+            </SchoolCoreProvider>
           }
         />
         <Route path="*" element={<Navigate to="/school/main" />} />

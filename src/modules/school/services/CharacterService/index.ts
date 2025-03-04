@@ -1,17 +1,16 @@
-import type { SchoolApiService } from "@school/services/ApiService";
-import { schoolApiService } from "@school/services/ApiService";
+import type { SchoolApiService } from '@school/services/ApiService';
+import { schoolApiService } from '@school/services/ApiService';
 
 export class SchoolCharacterService {
-    private apiService: SchoolApiService;
+  private apiService: SchoolApiService;
 
-    constructor(apiService: SchoolApiService) {
-        this.apiService = apiService;
-    }
+  constructor(apiService: SchoolApiService) {
+    this.apiService = apiService;
+  }
 
-    async fetchCharacter() {
-      return this.apiService.fetchCharacter();
-    }
-};
+  async fetchCharacter() {
+    return this.apiService.fetchCharacter();
+  }
+}
 
 export const schoolCharacterService = new SchoolCharacterService(schoolApiService);
-  

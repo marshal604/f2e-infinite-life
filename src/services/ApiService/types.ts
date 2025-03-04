@@ -1,14 +1,14 @@
 export interface CharacterAttribute {
-    academics?: number;
+  academics?: number;
 }
 
 export interface Choice {
-    text: string;
-    updatedAttributes: CharacterAttribute;
-    resultDescription: string;
+  text: string;
+  updatedAttributes: CharacterAttribute;
+  resultDescription: string;
 }
 
 export interface EventResponse {
-    "eventDescription": string,
-    "choices": Choice[]
+  eventDescription: string;
+  choices: Choice[];
 }
