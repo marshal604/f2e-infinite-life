@@ -7,7 +7,7 @@ export class EventService {
     this.apiService = apiService;
   }
 
-  async generateEvent(attributes: any, choice: string) {
+  async generateEvent<T>(attributes: T, choice: string) {
     return this.apiService.fetchEvent(attributes, choice);
   }
 }
